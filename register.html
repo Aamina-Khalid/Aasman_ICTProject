@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aasman - Register</title>
+    <link rel="stylesheet" href="register.css">
+    <link rel="icon" href="images/logo.png">
+     <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <div class="stars"></div>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">AASMAN</div>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="missions.html">Missions</a></li>
+            <li><a href="scientists.html">Scientists</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="register.html" class="active">Register</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <section class="page-header">
+        <h1>Join Our Team</h1>
+        <p>Make an impact in Pakistan's space future and support women in STEM</p>
+    </section>
+
+    <!-- Registration Form -->
+    <section class="form-section">
+        <div class="form-container">
+            <h2>Registration Form</h2>
+            <p class="form-intro">Fill out this form to become part of the Aasman community. Whether you're a student, professional, or supporter, we as a team welcome you!</p>
+            
+            <form id="registrationForm">
+                <!-- Personal Information -->
+                <div class="form-group">
+                    <h3>Personal Information</h3>
+                    
+                    <label for="fullname">Full Name *</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                    
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                    
+                    <label for="city">City *</label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+
+                <!-- Education/Profession -->
+                <div class="form-group">
+                    <h3>Education & Background</h3>
+                    
+                    <label for="status">Current Status *</label>
+                    <select id="status" name="status" required>
+                        <option value="">Select...</option>
+                        <option value="student">Student</option>
+                        <option value="professional">Professional</option>
+                        <option value="educator">Educator</option>
+                        <option value="researcher">Researcher</option>
+                        <option value="other">Other</option>
+                    </select>
+                    
+                    <label for="institution">Institution/Organization</label>
+                    <input type="text" id="institution" name="institution" placeholder="University, company, etc.">
+                    
+                    <label for="field">Field of Interest *</label>
+                    <select id="field" name="field" required>
+                        <option value="">Select...</option>
+                        <option value="cs">Data Science</option>
+                        <option value="space">Space Science & Astronomy</option>
+                        <option value="engineering">Engineering</option>
+                        <option value="physics">Physics</option>
+                        <option value="biology">Biology/Biotechnology</option>
+                        <option value="mathematics">Mathematics</option>
+                        <option value="other">Other STEM Field</option>
+                    </select>
+                </div>
+
+                <!-- Interest & Motivation -->
+                <div class="form-group">
+                    <h3>Why Join Aasman?</h3>
+                    
+                    <label>I want to: *</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="interest" value="learn"> Learn about space science</label>
+                        <label><input type="checkbox" name="interest" value="support"> Support women in STEM</label>
+                        <label><input type="checkbox" name="interest" value="mentor"> Become a mentor</label>
+                        <label><input type="checkbox" name="interest" value="volunteer"> Volunteer for projects</label>
+                        <label><input type="checkbox" name="interest" value="network"> Network with professionals</label>
+                    </div>
+                    
+                    <label for="message">Tell us about yourself and your goals</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Share your aspirations, questions, or how you'd like to contribute..."></textarea>
+                </div>
+
+                <!-- Gender -->
+                <div class="form-group">
+                    <label>Gender (Optional)</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                        <label><input type="radio" name="gender" value="male"> Male</label>
+                        <label><input type="radio" name="gender" value="other"> Other</label>
+                        <label><input type="radio" name="gender" value="prefer-not"> Prefer not to say</label>
+                    </div>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="form-group">
+                    <label class="checkbox-single">
+                        <input type="checkbox" name="newsletter" checked>
+                        Subscribe to our newsletter for updates on space missions and women in STEM
+                    </label>
+                    
+                    <label class="checkbox-single">
+                        <input type="checkbox" name="terms" required>
+                        I agree to the terms and conditions *
+                    </label>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="submit-btn">Submit Registration</button>
+            </form>
+
+            <div id="successMessage" class="success-message">
+                <h3>Thank you for registering! ✨</h3>
+                <p>We'll get back to you soon with more information.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Aasman - Women Beyond Limits</p>
+        <p>By Aamina, Maryam, Waasie | Institute of Space and Technology</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
