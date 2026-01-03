@@ -5,9 +5,7 @@ Aasman is a website tracking Pakistan's space missions and honoring Pakistani wo
 # This Project is a team work of 
 
 - Aamina Khalid
-- 
 - Maryam Nadeem
-- 
 - M. Abdul Waasie Sheikh
 
 # Technologies Used In Website
