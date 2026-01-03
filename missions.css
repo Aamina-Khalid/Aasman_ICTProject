@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1a0b2e 0%, #2d1b4e 100%);
+    color: white;
+    line-height: 1.6;
+}
+.stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(2px 2px at 20% 30%, white, transparent),
+        radial-gradient(2px 2px at 60% 70%, white, transparent),
+        radial-gradient(1px 1px at 50% 50%, white, transparent),
+        radial-gradient(1px 1px at 80% 10%, white, transparent),
+        radial-gradient(2px 2px at 90% 60%, white, transparent);
+    background-size: 200px 200px;
+    pointer-events: none;  
+    z-index: -1;          
+}
+
+/* Navigation bar */
+nav {
+    background: rgba(26, 11, 46, 0.95);
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    border-bottom: 2px solid rgba(138, 43, 226, 0.3);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #00f5ff, #a855f7, #ec4899);
+    background-clip: text;
+    color:transparent;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: color 0.5s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #00f5ff;
+}
+#menu-icon {
+    font-size: 28px;
+    color: #00f5ff;
+    display: none;  
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#menu-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Page Header */
+.page-header {
+    padding: 150px 50px 80px;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 56px;
+    background: linear-gradient(135deg, #00f5ff, #a855f7);
+    background-clip: text;
+    color:transparent;
+    margin-bottom: 15px;
+}
+
+.page-header p {
+    font-size: 20px;
+    color: #b8b8ff;
+}
+
+/* Timeline Section */
+.timeline-section {
+    padding: 60px 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline-section h2 {
+    font-size: 38px;
+    color: #00f5ff;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(180deg, #00f5ff, #a855f7, #ec4899);
+}
+
+.timeline-item {
+    margin-bottom: 60px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.timeline-item:nth-child(odd) {
+    flex-direction: row;
+}
+
+.timeline-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.timeline-year {
+    width: 55%;
+    text-align: right;
+    padding-right: 50px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #ec4899;
+}
+
+.timeline-item:nth-child(even) .timeline-year {
+    text-align: left;
+    padding-left: 50px;
+    padding-right: 0;
+}
+
+.timeline-content {
+    width: 55%;
+    padding-left: 50px;
+    background: rgba(45, 27, 78, 0.5);
+    border: 2px solid rgba(138, 43, 226, 0.3);
+    border-radius: 15px;
+    padding: 25px;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    padding-right: 50px;
+    padding-left: 25px;
+}
+
+.timeline-content h3 {
+    font-size: 22px;
+    color: #00f5ff;
+    margin-bottom: 10px;
+}
+
+.timeline-content p {
+    color: #b8b8ff;
+    line-height: 1.8;
+}
+
+/* Table Section */
+.table-section {
+    padding: 60px 50px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.table-section h2 {
+    font-size: 38px;
+    color: #00f5ff;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    border-left: 4px solid #a855f7;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(45, 27, 78, 0.5);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+thead {
+    background: linear-gradient(135deg, #a855f7, #ec4899);
+}
+
+th {
+    padding: 20px;
+    text-align: left;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+td {
+    padding: 18px 20px;
+    border-bottom: 1px solid rgba(138, 43, 226, 0.2);
+    color: #b8b8ff;
+}
+
+tbody tr:hover {
+    background: rgba(138, 43, 226, 0.2);
+    cursor: pointer;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Footer */
+footer {
+    background: rgba(26, 11, 46, 0.95);
+    padding: 30px;
+    text-align: center;
+    border-top: 2px solid rgba(138, 43, 226, 0.3);
+    margin-top: 60px;
+}
+
+footer p {
+    color: #b8b8ff;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .page-header h1 {
+        font-size: 38px;
+    }
+    
+    .timeline::before {
+        left: 30px;
+    }
+    
+    .timeline-item {
+        flex-direction: column !important;
+        align-items: flex-start;
+        padding-left: 60px;
+    }
+    
+    .timeline-year {
+        width: 100%;
+        text-align: left !important;
+        padding: 0 !important;
+        margin-bottom: 10px;
+    }
+    
+    .timeline-content {
+        width: 100%;
+        padding: 20px !important;
+    }
+    
+    table {
+        font-size: 13px;
+    }
+    
+    th, td {
+        padding: 12px;
+    }
+         #menu-icon {
+        display: block; 
+    }
+    .nav-links {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        background: rgba(26, 11, 46, 0.98);
+        flex-direction: column;
+        gap: 0;
+        padding: 20px 0;
+        transition: left 0.3s;
+        border-bottom: 2px solid rgba(138, 43, 226, 0.3);
+        z-index: 99;
+    }
+    .nav-links.active {
+        left: 0;
+    }
+    
+    .nav-links li {
+        padding: 15px 50px;
+        border-bottom: 1px solid rgba(138, 43, 226, 0.2);
+    }
+    
+    .nav-links a {
+        font-size: 16px;
+    }
+}
