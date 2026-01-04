@@ -30,4 +30,6 @@ A form Page specifically designed if you want to be part of our team.
 
 # Demo
 
-There the live link of our site
+There the live link of our site:
+
+https://aamina-khalid.github.io/Aasman_ICTProject/
