@@ -89,8 +89,7 @@ nav {
     font-size: 56px;
     background: linear-gradient(135deg, #00f5ff, #a855f7);
     background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color:transparent;
     margin-bottom: 15px;
 }
 
@@ -301,5 +300,6 @@ footer p {
         padding: 40px 20px;
     }
 }
+
 
 
