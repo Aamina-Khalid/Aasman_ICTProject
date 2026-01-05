@@ -73,4 +73,5 @@ if (menuIcon && navLinks) {
     });
 
 }
-document.querySelector(".fullname").style.color = "pink" ;
+
+
