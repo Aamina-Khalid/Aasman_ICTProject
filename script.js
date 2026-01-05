@@ -71,4 +71,6 @@ if (menuIcon && navLinks) {
             menuIcon.classList.add('fa-bars');
         });
     });
+
 }
+document.querySelector(".fullname").style.color = "pink" ;
