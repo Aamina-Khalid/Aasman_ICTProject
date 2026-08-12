@@ -9,7 +9,7 @@ Aasman is a website tracking Pakistan's space missions and honoring Pakistani wo
 
 # This Project is a team work of 
 
-- Aamina Khalid
+- Aamina Khalid (System Design and Working)
 - Maryam Nadeem
 - M. Abdul Waasie Sheikh
 
@@ -38,3 +38,5 @@ A form Page specifically designed if you want to be part of our team.
 There the live link of our site:
 
 https://aamina-khalid.github.io/Aasman_ICTProject/
+
+##Department of Computer Science, IST Islamabad
